@@ -13,19 +13,19 @@ while no_chance<chance:
    computer=random.choice(ref)
 
    if human==computer:
-    print("tie")
+    print("It is a tie")
     no_chance=no_chance+1
     co_point=co_point+1
     your_point=your_point+1
 
    #if human enters "s"
    elif human=="s" and computer=="w":
-     print("won, keep it up")
+     print("Congratulations, you won")
      print("com chose water")
      your_point=your_point+1
      no_chance=no_chance+1
    elif human=="s" and computer=="g":
-     print("lose, better luck next time")
+     print("Ohh!! You lose, better luck next time")
      print("com chose gun")
      co_point=co_point+1
      no_chance=no_chance+1
@@ -37,26 +37,26 @@ while no_chance<chance:
      your_point=your_point+1
      no_chance=no_chance+1
    elif human=="w" and computer=="s":
-     print("lose, better luck next time")
+     print("Ohh!! You lose, better luck next time")
      print("com chose snake")
      co_point=co_point+1
      no_chance=no_chance+1
 
      #if humanenters "g"
    elif human=="g" and computer=="s":
-     print("won, keep it up")
+     print("Congratulations, you won")
      print("com chose snake")
      your_point=your_point+1
      no_chance=no_chance+1
    elif human=="g" and computer=="w":
-     print("lose, better luck next time")
+     print("Ohh!! You lose, better luck next time")
      print("com chose water")
      co_point=co_point+1
      no_chance=no_chance+1
 
    #if user inputs invalid input he losed
    else:
-       print("you entered wrong, and broke the disipline so you losed")
+       print("You entered the wrong letter, thus breaking the discipline of the game so you lose")
        your_point=your_point*0
        break
     
@@ -64,7 +64,7 @@ while no_chance<chance:
 print("\n \n")
 
 if your_point==0:
-    print("you are undisiplined and loser")
+    print("you are undisciplined,but you lost the game")
 
 if your_point>co_point:
  print("you won the match")
